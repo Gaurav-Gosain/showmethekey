@@ -245,6 +245,8 @@ static void smtk_keys_mapper_init(SmtkKeysMapper *mapper)
 			    g_strdup("}"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("backslash"),
 			    g_strdup("\\"));
+	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("BackSpace"),
+			    g_strdup("󰭜"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("bar"),
 			    g_strdup("|"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Caps_Lock"),
@@ -274,7 +276,15 @@ static void smtk_keys_mapper_init(SmtkKeysMapper *mapper)
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("question"),
 			    g_strdup("?"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("space"),
-			    g_strdup("Space"));
+			    g_strdup("󱁐"));
+	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Left"),
+			    g_strdup(""));
+	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Right"),
+			    g_strdup(""));
+	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Up"),
+			    g_strdup(""));
+	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Down"),
+			    g_strdup(""));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Print"),
 			    g_strdup("PrintScreen"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Sys_Req"),
