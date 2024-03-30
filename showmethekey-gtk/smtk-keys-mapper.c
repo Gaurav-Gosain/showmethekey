@@ -260,9 +260,9 @@ static void smtk_keys_mapper_init(SmtkKeysMapper *mapper)
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("quotedbl"),
 			    g_strdup("\""));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Return"),
-			    g_strdup("Enter"));
+			    g_strdup("⏎"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Escape"),
-			    g_strdup("Escape"));
+			    g_strdup("⎋"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("comma"),
 			    g_strdup(","));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("less"),
