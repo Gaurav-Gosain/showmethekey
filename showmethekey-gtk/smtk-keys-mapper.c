@@ -188,19 +188,18 @@ static void smtk_keys_mapper_init(SmtkKeysMapper *mapper)
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Meta_R"),
 			    g_strdup("Meta"));
 	g_hash_table_insert(mapper->xkb_replace_names,
-			    g_strdup("XF86AudioMute"), g_strdup("MuteToggle"));
+			    g_strdup("XF86AudioMute"), g_strdup("󰖁"));
 	g_hash_table_insert(mapper->xkb_replace_names,
-			    g_strdup("XF86AudioLowerVolume"),
-			    g_strdup("VolumnDown"));
+			    g_strdup("XF86AudioLowerVolume"), g_strdup("󰝞"));
 	g_hash_table_insert(mapper->xkb_replace_names,
-			    g_strdup("XF86AudioRaiseVolume"),
-			    g_strdup("VolumnUp"));
+			    g_strdup("XF86AudioRaiseVolume"), g_strdup("󰝝"));
+	g_hash_table_insert(mapper->xkb_replace_names,
+			    g_strdup("XF86AudioPlay"), g_strdup("󰐎"));
 	g_hash_table_insert(mapper->xkb_replace_names,
 			    g_strdup("XF86MonBrightnessDown"),
-			    g_strdup("BrightnessDown"));
+			    g_strdup("󰃞"));
 	g_hash_table_insert(mapper->xkb_replace_names,
-			    g_strdup("XF86MonBrightnessUp"),
-			    g_strdup("BrightnessUp"));
+			    g_strdup("XF86MonBrightnessUp"), g_strdup("󰃠"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Num_Lock"),
 			    g_strdup("NumLock"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("asciitilde"),
@@ -250,7 +249,7 @@ static void smtk_keys_mapper_init(SmtkKeysMapper *mapper)
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("bar"),
 			    g_strdup("|"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Caps_Lock"),
-			    g_strdup("CapsLock"));
+			    g_strdup("󰘲"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("semicolon"),
 			    g_strdup(";"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("colon"),
@@ -296,9 +295,9 @@ static void smtk_keys_mapper_init(SmtkKeysMapper *mapper)
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("Next"),
 			    g_strdup("PageDown"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("BTN_LEFT"),
-			    g_strdup("MouseLeft"));
+			    g_strdup("󰍽"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("BTN_RIGHT"),
-			    g_strdup("MouseRight"));
+			    g_strdup("󰍽"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("BTN_MIDDLE"),
 			    g_strdup("MouseMiddle"));
 	g_hash_table_insert(mapper->xkb_replace_names, g_strdup("BTN_EXTRA"),
